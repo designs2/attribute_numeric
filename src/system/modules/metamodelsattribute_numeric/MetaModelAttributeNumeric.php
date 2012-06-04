@@ -34,7 +34,7 @@ class MetaModelAttributeNumeric extends MetaModelAttributeSimple
 		return 'int(10) NULL default NULL';
 	}
 
-	public static function getAttributeSettingNames()
+	public function getAttributeSettingNames()
 	{
 		return array_merge(parent::getAttributeSettingNames(), array(
 			'parentCheckbox',
