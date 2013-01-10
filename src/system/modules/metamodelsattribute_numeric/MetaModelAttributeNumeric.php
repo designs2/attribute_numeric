@@ -20,7 +20,7 @@ if (!defined('TL_ROOT'))
 
 /**
  * This is the MetaModelAttribute class for handling text fields.
- * 
+ *
  * @package	   MetaModels
  * @subpackage AttributeNumeric
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
@@ -53,9 +53,9 @@ class MetaModelAttributeNumeric extends MetaModelAttributeSimple
 		));
 	}
 
-	public function getFieldDefinition()
+	public function getFieldDefinition($arrOverrides = array())
 	{
-		$arrFieldDef=parent::getFieldDefinition();
+		$arrFieldDef=parent::getFieldDefinition($arrOverrides);
 		$arrFieldDef['inputType'] = 'text';
 		$arrFieldDef['eval']['rgxp'] = 'digit';
 		return $arrFieldDef;
