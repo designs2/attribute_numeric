@@ -37,19 +37,10 @@ class MetaModelAttributeNumeric extends MetaModelAttributeSimple
 	public function getAttributeSettingNames()
 	{
 		return array_merge(parent::getAttributeSettingNames(), array(
-			'parentCheckbox',
-			'titleField',
-			'width50',
-			'insertBreak',
-			'sortingField',
-			'filteredField',
-			'searchableField',
-			'mandatory',
-			'defValue',
-			'uniqueItem',
-			'formatPrePost',
-			'format',
-			'editGroups'
+			'filterable',
+			'searchable',
+			'sortable',
+			'flag'
 		));
 	}
 
