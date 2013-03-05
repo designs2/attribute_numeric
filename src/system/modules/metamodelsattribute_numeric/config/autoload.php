@@ -10,12 +10,25 @@
  * @package    MetaModels
  * @subpackage AttributeNumeric
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
+ * @author     Andreas Isaak <info@andreas-isaak.de>
  * @copyright  The MetaModels team.
  * @license    LGPL.
  * @filesource
  */
 
 /**
- * Fields
+ * Register the classes
  */
-$GLOBALS['TL_LANG']['tl_metamodel_attribute']['typeOptions']['numeric']    = 'Numerisch';
+ClassLoader::addClasses(array
+(
+	'MetaModelAttributeNumeric'              => 'system/modules/metamodelsattribute_numeric/MetaModelAttributeNumeric.php',
+));
+
+
+/**
+ * Register the templates
+ */
+TemplateLoader::addFiles(array
+(
+	'mm_attr_numeric'              => 'system/modules/metamodelsattribute_numeric/templates',
+));
