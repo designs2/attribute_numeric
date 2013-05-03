@@ -1,0 +1,4 @@
+Numeric
+=======
+
+The numeric attribute
