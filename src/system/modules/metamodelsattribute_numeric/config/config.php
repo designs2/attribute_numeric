@@ -15,8 +15,5 @@
  * @filesource
  */
 
-$GLOBALS['METAMODELS']['attributes']['numeric'] = array
-(
-	'class' => 'MetaModelAttributeNumeric',
-	'image' => 'system/modules/metamodelsattribute_numeric/html/numeric.png'
-);
+$GLOBALS['METAMODELS']['attributes']['numeric']['class'] = 'MetaModelAttributeNumeric';
+$GLOBALS['METAMODELS']['attributes']['numeric']['image'] = 'system/modules/metamodelsattribute_numeric/html/numeric.png';
