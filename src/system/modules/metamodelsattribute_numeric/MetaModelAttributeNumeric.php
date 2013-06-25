@@ -34,6 +34,7 @@ class MetaModelAttributeNumeric extends MetaModelAttributeSimple
 	public function getAttributeSettingNames()
 	{
 		return array_merge(parent::getAttributeSettingNames(), array(
+			'mandatory',
 			'filterable',
 			'searchable',
 			'sortable',
