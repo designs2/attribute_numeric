@@ -15,6 +15,10 @@
  * @filesource
  */
 
+namespace MetaModels\Attribute\Numeric;
+
+use MetaModels\Attribute\BaseSimple;
+
 /**
  * This is the MetaModelAttribute class for handling numeric fields.
  *
@@ -22,15 +26,20 @@
  * @subpackage AttributeNumeric
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
  */
-class MetaModelAttributeNumeric extends MetaModelAttributeSimple
+class Numeric extends BaseSimple
 {
-
+	/**
+	 * {@inheritdoc}
+	 */
 	public function getSQLDataType()
 	{
 		// TODO: is the default value here really a wise idea?
 		return 'int(10) NULL default NULL';
 	}
 
+	/**
+	 * {@inheritdoc}
+	 */
 	public function getAttributeSettingNames()
 	{
 		return array_merge(parent::getAttributeSettingNames(), array(
@@ -42,17 +51,17 @@ class MetaModelAttributeNumeric extends MetaModelAttributeSimple
 		));
 	}
 
+	/**
+	 * {@inheritdoc}
+	 */
 	public function getFieldDefinition($arrOverrides = array())
 	{
-		$arrFieldDef=parent::getFieldDefinition($arrOverrides);
-		$arrFieldDef['inputType'] = 'text';
+		$arrFieldDef                 = parent::getFieldDefinition($arrOverrides);
+		$arrFieldDef['inputType']    = 'text';
 		$arrFieldDef['eval']['rgxp'] = 'digit';
+
 		return $arrFieldDef;
 	}
-
-	////////////////////////////////////////////////////////////////////////////
-	// IMetaModelAttribute functions
-	////////////////////////////////////////////////////////////////////////////
 
 	/**
 	 * Filter all values greater than the passed value.
@@ -106,13 +115,13 @@ class MetaModelAttributeNumeric extends MetaModelAttributeSimple
 	protected function getIdsFiltered($varValue, $strOperation)
 	{
 		$strSql = sprintf('SELECT id FROM %s WHERE %s %s %d',
-				$this->getMetaModel()->getTableName(),
-				$this->getColName(),
-				$strOperation,
-				intval($varValue)
-				);
+			$this->getMetaModel()->getTableName(),
+			$this->getColName(),
+			$strOperation,
+			intval($varValue)
+		);
 
-		$objIds = Database::getInstance()->executeUncached($strSql);
+		$objIds = \Database::getInstance()->executeUncached($strSql);
 		return $objIds->fetchEach('id');
 	}
 

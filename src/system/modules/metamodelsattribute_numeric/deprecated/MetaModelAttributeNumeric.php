@@ -1,5 +1,4 @@
 <?php
-
 /**
  * The MetaModels extension allows the creation of multiple collections of custom items,
  * each with its own unique set of selectable attributes, with attribute extendability.
@@ -8,12 +7,12 @@
  *
  * PHP version 5
  * @package    MetaModels
- * @subpackage AttributeNumeric
+ * @subpackage Deprecated
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
  * @copyright  The MetaModels team.
  * @license    LGPL.
  * @filesource
  */
 
-$GLOBALS['METAMODELS']['attributes']['numeric']['class'] = 'MetaModels\Attribute\Numeric\Numeric';
-$GLOBALS['METAMODELS']['attributes']['numeric']['image'] = 'system/modules/metamodelsattribute_numeric/html/numeric.png';
+trigger_error('Usage of deprecated '. __FILE__, E_USER_DEPRECATED);
+class_alias('MetaModels\Attribute\Numeric\Numeric', 'MetaModelAttributeNumeric');
