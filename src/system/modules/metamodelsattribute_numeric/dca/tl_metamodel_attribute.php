@@ -18,7 +18,4 @@
 /**
  * Table tl_metamodel_attribute 
  */
-$GLOBALS['TL_DCA']['tl_metamodel_attribute']['metapalettes']['numeric extends _simpleattribute_'] = array
-(
-//	'+display' => array('titleField after name')
-);
+$GLOBALS['TL_DCA']['tl_metamodel_attribute']['metapalettes']['numeric extends _simpleattribute_'] = array();

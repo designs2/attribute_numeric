@@ -33,7 +33,6 @@ class Numeric extends BaseSimple
 	 */
 	public function getSQLDataType()
 	{
-		// TODO: is the default value here really a wise idea?
 		return 'int(10) NULL default NULL';
 	}
 
@@ -66,7 +65,7 @@ class Numeric extends BaseSimple
 	/**
 	 * Filter all values greater than the passed value.
 	 *
-	 * @param mixed $varValue     The value to use as lower end
+	 * @param mixed $varValue     The value to use as lower end.
 	 *
 	 * @param bool  $blnInclusive If true, the passed value will be included, if false, it will be excluded.
 	 *
@@ -94,7 +93,7 @@ class Numeric extends BaseSimple
 	/**
 	 * Filter all values not having the passed value.
 	 *
-	 * @param mixed $varValue     The value to use as upper end.
+	 * @param mixed $varValue The value to use as upper end.
 	 *
 	 * @return array The list of item ids of all items matching the condition.
 	 */
