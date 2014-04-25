@@ -17,17 +17,6 @@
  */
 
 /**
- * Register the classes
- */
-ClassLoader::addClasses(array
-(
-	'MetaModels\Attribute\Numeric\Numeric' => 'system/modules/metamodelsattribute_numeric/MetaModels/Attribute/Numeric/Numeric.php',
-
-	'MetaModelAttributeNumeric'            => 'system/modules/metamodelsattribute_numeric/deprecated/MetaModelAttributeNumeric.php',
-));
-
-
-/**
  * Register the templates
  */
 TemplateLoader::addFiles(array
