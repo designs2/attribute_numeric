@@ -11,5 +11,4 @@
  * last-updated: 2013-05-13T22:13:00+02:00
  */
 
-
 $GLOBALS['TL_LANG']['tl_metamodel_attribute']['typeOptions']['numeric'] = 'Numeric';

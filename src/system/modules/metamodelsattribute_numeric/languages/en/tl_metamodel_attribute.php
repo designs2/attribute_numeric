@@ -18,4 +18,4 @@
 /**
  * Fields
  */
-$GLOBALS['TL_LANG']['tl_metamodel_attribute']['typeOptions']['numeric']    = 'Numeric';
+$GLOBALS['TL_LANG']['tl_metamodel_attribute']['typeOptions']['numeric'] = 'Numeric';

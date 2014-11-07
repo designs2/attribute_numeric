@@ -19,7 +19,9 @@
 /**
  * Register the templates
  */
-TemplateLoader::addFiles(array
-(
-	'mm_attr_numeric'              => 'system/modules/metamodelsattribute_numeric/templates',
-));
+TemplateLoader::addFiles(
+    array
+    (
+        'mm_attr_numeric' => 'system/modules/metamodelsattribute_numeric/templates',
+    )
+);
