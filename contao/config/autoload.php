@@ -20,8 +20,7 @@
  * Register the templates
  */
 TemplateLoader::addFiles(
-    array
-    (
+    array(
         'mm_attr_numeric' => 'system/modules/metamodelsattribute_numeric/templates',
     )
 );
