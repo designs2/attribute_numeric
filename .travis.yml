@@ -18,7 +18,3 @@ install:
     - composer install --prefer-dist --dev
 
 script: ant -keep-going
-
-branches:
-  only:
-    - tng
