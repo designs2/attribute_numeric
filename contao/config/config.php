@@ -15,7 +15,6 @@
  * @filesource
  */
 
-/**
- * Fields
- */
-$GLOBALS['TL_LANG']['tl_metamodel_attribute']['typeOptions']['numeric']    = 'Numeric';
+$GLOBALS['METAMODELS']['attributes']['numeric']['class'] = 'MetaModels\Attribute\Numeric\Numeric';
+$GLOBALS['METAMODELS']['attributes']['numeric']['image'] =
+    'system/modules/metamodelsattribute_numeric/html/numeric.png';

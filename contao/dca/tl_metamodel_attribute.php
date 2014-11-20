@@ -15,6 +15,7 @@
  * @filesource
  */
 
-$GLOBALS['METAMODELS']['attributes']['numeric']['class'] = 'MetaModels\Attribute\Numeric\Numeric';
-$GLOBALS['METAMODELS']['attributes']['numeric']['image'] =
-	'system/modules/metamodelsattribute_numeric/html/numeric.png';
+/**
+ * Table tl_metamodel_attribute
+ */
+$GLOBALS['TL_DCA']['tl_metamodel_attribute']['metapalettes']['numeric extends _simpleattribute_'] = array();

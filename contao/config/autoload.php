@@ -10,12 +10,17 @@
  * @package    MetaModels
  * @subpackage AttributeNumeric
  * @author     Christian Schiffler <c.schiffler@cyberspectrum.de>
+ * @author     Andreas Isaak <info@andreas-isaak.de>
  * @copyright  The MetaModels team.
  * @license    LGPL.
  * @filesource
  */
 
 /**
- * Table tl_metamodel_attribute 
+ * Register the templates
  */
-$GLOBALS['TL_DCA']['tl_metamodel_attribute']['metapalettes']['numeric extends _simpleattribute_'] = array();
+TemplateLoader::addFiles(
+    array(
+        'mm_attr_numeric' => 'system/modules/metamodelsattribute_numeric/templates',
+    )
+);
