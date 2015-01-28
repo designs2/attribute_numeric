@@ -108,7 +108,7 @@ class Numeric extends BaseSimple
             intval($varValue)
         );
 
-        $objIds = \Database::getInstance()->executeUncached($strSql);
+        $objIds = $this->getMetaModel()->getServiceContainer()->getDatabase()->execute($strSql);
 
         return $objIds->fetchEach('id');
     }
