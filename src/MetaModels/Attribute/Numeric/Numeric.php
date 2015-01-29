@@ -47,8 +47,6 @@ class Numeric extends BaseSimple
                 'mandatory',
                 'filterable',
                 'searchable',
-                'sortable',
-                'flag',
             )
         );
     }
